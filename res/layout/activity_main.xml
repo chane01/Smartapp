@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="- Bluetooth Setting"
+        android:textSize="30sp" 
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Bluetooth State : "
+            android:textSize="20sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Connected" 
+            android:textSize="20sp"
+            android:textColor="#ff0000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center" >
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ToggleButton"
+            android:textOff="Bluetooth 꺼짐"
+            android:textOn="Bluetooth 켜짐" />
+
+        <Button
+            android:id="@+id/button1" 
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Scan and Connect"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp" >
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:text="센싱 및 지도 모드"
+            android:textSize="30sp"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:text="LED 컨트롤 모드" 
+            android:textSize="30sp"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
